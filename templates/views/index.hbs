@@ -5,26 +5,30 @@
 <head>
     <title>Weather</title>
     <link rel="icon" href="/img/weahterappicon.png">
-<link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/styles.css">
 
 </head>
 
 <body>
 
-<div class="main-content">
- {{>header}}
- <p id="inf">Enter a location to get weather details!</p>
-<form>
-    <input placeholder="Location" class="location">
-    <button class="button">Search</button>
-</form>
-<p id="message-1"></p>
-<p id="message-2"></p>
-</div>
+    <div class="main-content">
+        {{>header}}
+        <p id="inf">Enter a location to get weather details!</p>
+        <form>
+            <input placeholder="Location" class="location">
+            <button class="button">Search</button>
 
-  
-    
+
+        </form><br>
+        <button class="current-location-button">Fetch weather for current location</button>
+        <p id="message-1"></p>
+        <p id="message-2"></p>
+    </div>
+
+
+
     {{>footer}}
     <script src="/js/app.js"></script>
 </body>
+
 </html>
